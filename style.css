@@ -1,24 +1,25 @@
 
-body {
+body {	
     box-sizing: border-box;
     position: relative;
-    margin: auto;
-}
+    margin: 0;
+    max-width: 1124px;
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto
+}	
 body::before {
     position: fixed;
     content: "";
     top: 1px;
     right: 1px;
   }
-body > div {
-    position:relative;
-    margin:auto;
-}
+  
 /*HEADER*/
 header {
     display: block;
     max-width: 1124px;
-    width: 100%
+    width: 100%;
 }
 .lending-head {
     display: flex;
@@ -633,6 +634,11 @@ ul.dropdown-menu > li:hover > ul.submenu {
         height: 102px;
         width: 102px;
     }
+    .main-container > div > div {
+        padding: 8px;
+        display: flex;
+        flex: 0 1 180px;
+    }
     .footer-containers {
         padding-left: 8px;
     }
@@ -642,7 +648,6 @@ ul.dropdown-menu > li:hover > ul.submenu {
     }
     .title-dish {
         font-size: 14px;
-        padding-right: 120px;
     }
     .container_2 {
         flex-direction: column; 
