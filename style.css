@@ -636,6 +636,9 @@ ul.dropdown-menu > li:hover > ul.submenu {
         max-width: 320px;
         width: 100%;
     }
+    .title-dish {
+        font-size: 14px;
+    }
     .container_2 {
         flex-direction: column; 
     }
