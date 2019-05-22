@@ -2,15 +2,18 @@
 body {
     box-sizing: border-box;
     position: relative;
-    margin: 0;
+    margin: auto;
 }
 body::before {
     position: fixed;
-    content: "Desktop";
+    content: "";
     top: 1px;
     right: 1px;
   }
-
+body > div {
+    position:relative;
+    margin:auto;
+}
 /*HEADER*/
 header {
     display: block;
@@ -115,6 +118,7 @@ header {
     width: 80px;
     height: 40px;
     background: #262626;
+    border: 0;
     border-radius: 2px;
     font-family: Roboto;
     font-style: normal;
@@ -468,7 +472,7 @@ ul.dropdown-menu > li:hover > ul.submenu {
 
 @media (max-width: 768px) {
     body::before {
-      content: "Tablet Portrait to Tablet Landscape";
+      content: "";
     }
     .lending-head {
         padding-left: 8px;
@@ -557,7 +561,7 @@ ul.dropdown-menu > li:hover > ul.submenu {
 }
 @media (max-width: 320px) {
     body::before {
-      content: "Mobile";
+      content: "";
     }
     .delivery {
         display: none;
@@ -618,7 +622,7 @@ ul.dropdown-menu > li:hover > ul.submenu {
         display: block;
         margin-left: 42%;
         margin-right: 42%;
-        margin-bottom: 134px;
+        margin-bottom: 43px;
 
     }
     .main-container > div > img {
@@ -638,6 +642,7 @@ ul.dropdown-menu > li:hover > ul.submenu {
     }
     .title-dish {
         font-size: 14px;
+        padding-right: 120px;
     }
     .container_2 {
         flex-direction: column; 
