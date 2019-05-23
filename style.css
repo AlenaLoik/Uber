@@ -6,7 +6,7 @@ body {
     max-width: 1124px;
     width: 100%;
     margin-left:auto;
-    margin-right:auto
+    margin-right:auto;
 }	
 body::before {
     position: fixed;
@@ -459,17 +459,28 @@ ul.dropdown-menu > li:hover > ul.submenu {
     margin-bottom: 35px;
 }
 
-
- body > a {
-    display: block;
+ .Go-to-top-img{
+     width: 60px;
+     height: 60px;
+ }
+ #myBtn {
+    display: none;
     position: fixed;
-    bottom: 24px;
-    right: 16px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
     outline: none;
-}
+    background-color:#59BD5A;;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 2px;
+    border: 2px solid #59BD5A;
+  }
+  #myBtn:hover {
+    background-color:  rgb(56, 131, 57);
+  }
 
 @media (max-width: 768px) {
     body::before {
