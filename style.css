@@ -15,6 +15,28 @@ body::before {
     right: 1px;
   }
   
+  .Go-to-top-img {
+    width: 60px;
+    height: 60px;
+}
+#myBtn {
+   display: flex;
+   position: fixed;
+   bottom: 20px;
+   margin-left: 1016px;
+   z-index: 99;
+   font-size: 18px;
+   outline: none;
+   background-color:#59BD5A;;
+   cursor: pointer;
+   padding: 10px;
+   border-radius: 2px;
+   border: 2px solid #59BD5A;
+ }
+ #myBtn:hover {
+   background-color:  rgb(56, 131, 57);
+ }
+
 /*HEADER*/
 header {
     display: block;
@@ -458,29 +480,15 @@ ul.dropdown-menu > li:hover > ul.submenu {
     cursor: pointer;
     margin-bottom: 35px;
 }
-
- .Go-to-top-img{
-     width: 60px;
-     height: 60px;
- }
- #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    outline: none;
-    background-color:#59BD5A;;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 2px;
-    border: 2px solid #59BD5A;
-  }
-  #myBtn:hover {
-    background-color:  rgb(56, 131, 57);
-  }
+@media (max-width: 1120px) {
+    body::before {
+      content: "";
+    }
+    #myBtn {
+        margin-left: auto;
+        right: 24px;
+        }
+}
 
 @media (max-width: 768px) {
     body::before {
@@ -574,6 +582,13 @@ ul.dropdown-menu > li:hover > ul.submenu {
 @media (max-width: 320px) {
     body::before {
       content: "";
+    }
+    #myBtn {
+        right: 30px;
+        z-index: 99;
+        background-color:#59BD5A;;
+        padding: 1px;
+        border: 1px solid #59BD5A;
     }
     .delivery {
         display: none;
@@ -691,10 +706,6 @@ ul.dropdown-menu > li:hover > ul.submenu {
     }
     .container_4 > p {
         margin-bottom: 5px;
-    }
-    body > a > img {
-        width: 64px;
-        height: 64px;
     }
 
 }
