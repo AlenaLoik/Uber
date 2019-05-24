@@ -164,6 +164,8 @@ header {
 }
 .bg-header-img-1 {
     position: absolute;
+    width: 100vw;
+    max-width: 1124px;
 } 
 .bg-header-img-2 {
     display: none;
@@ -171,7 +173,6 @@ header {
 .bg-header-img-3 {
     display: none;
 }
-
 .info-container {
     position: absolute;
     width: 389px;
@@ -525,9 +526,8 @@ ul.dropdown-menu > li:hover > ul.submenu {
     .bg-header-img-2 {
         display: block;
         position: absolute;
-    }
-    .bg-header-img-3 {
-        display: none;
+        width: 100vw;
+        max-width: 768px;
     }
     .info-container {
         width: 432px;
@@ -603,15 +603,14 @@ ul.dropdown-menu > li:hover > ul.submenu {
     .user-enter > svg {
         display: none;
     }
-    .bg-header-img-1 {
-        display: none;  
-    } 
     .bg-header-img-2 {
         display: none;  
     }
     .bg-header-img-3 {
         display: block;
         position: absolute;
+        width: 100vw;
+        max-width: 320px;
     }
     .info-container{
         width: 308px;
